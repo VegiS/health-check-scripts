@@ -15,7 +15,6 @@ echo "CHECK if expected string \"$EXPECTED_STRING\" is at HTTP output"
 
 if curl $URI | grep -q "$EXPECTED_STRING"; then
   echo -e "\nOK - expected string \"$EXPECTED_STRING\" was found at HTTP output."
-  exit 0
 else
   echo -e "\nERROR - expected string \"$EXPECTED_STRING\" was not found at HTTP output."
   exit 1
